@@ -61,11 +61,30 @@ nav .gnb_bg { position: absolute; background: #fbfbff; top: 9.4rem; left: 0; wid
 /* banner */
 .banner { height: 450px; background-image: url(../images/bg_pattern_top_slides.png); } 
 .banner .inner {display: flex;} 
-main {}
+main { height: 945px; background: #504ca0; }
 /* section:nth-child(1) { height: 315px; background: #b171d4; } 
 section:nth-child(2) { height: 315px; background: #8944ae; } 
 section:nth-child(3) { height: 315px; background: #b171d4; } */
+main .board { width: 100%; height: 250px; padding: 1rem; } 
+main .board .inner { width: 100%; max-width: 900px; margin: auto; } 
+main .board .row { display: flex; } 
 
+main .board .buttons li { width: 9rem; padding: 1rem; text-align: center; border: 2px solid var(--primary); background: var(--background); } 
+main .board .buttons li.on { background: var(--primary); } 
+main .board .buttons li.on a { color: var(--background); } 
+main .board .panels { width: 100%; height: 18rem; max-width: 50rem; flex-direction: column; position: relative; border: 2px solid var(--primary); border-top: none; } 
+main .board .panels::before { content: ''; position: absolute; width: calc(100% - 17rem); height: 2px; background: var(--primary); top: -2px; right:-2px; } 
+main .board .panels .row { justify-content: space-between; } 
+main .board .panels .row div { padding: 0.8rem 3rem; } 
+main .board h2 { position: absolute; right: 50rem; width: 20rem; text-align: center; line-height: 1.25; color: #bcbcbc; padding: 1rem; font-size: 5rem; } 
+main .board .panels .row .left { cursor: pointer; } 
+main .board .panels .row .left:hover { text-decoration: underline; } 
+.panel1,.panel2 { position: absolute; height: 17rem; width: 100%; } 
+.panel2 .row li { padding: 2rem; } 
+.panel2 .row li img { width: 100%; } 
+.panel2 { display: none; }
+
+ 
  
 footer { height: 220px; background: #77b5d7; } 
 .footer_nav { height: 60px; background: #5889a4; } 
